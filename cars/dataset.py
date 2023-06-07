@@ -20,7 +20,7 @@ class Dataset:
 
     def save_dataframe_to_csv(self, csv_file_path: str) -> None:
         """
-        Save the dataset to a CSV file.
+        Save the DataFrame to a CSV file.
         """
         try:
             self.dataframe.to_csv(csv_file_path, index=False)

@@ -7,7 +7,7 @@ from cars.dataset import Dataset
 class CarDataset(Dataset):
     def make_and_model_extract(self) -> None:
         """
-        Split the car Name into Make and Model
+        Split the car Name into Make and Model and add the columns to the DataFrame
         """
         self.dataframe[["Make", "Model"]] = self.dataframe["Name"].apply(
             lambda x: pd.Series(str(x).split(" ", 1))
