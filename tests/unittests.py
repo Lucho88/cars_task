@@ -45,7 +45,6 @@ class CarDatasetTests(unittest.TestCase):
         car_dataset.make_and_model_extract()
         if 'Make' and 'Model' in car_dataset.dataframe:
             columns_exist = True
-
         self.assertTrue(columns_exist)
-        print(str(car_dataset.dataframe))
+
 
