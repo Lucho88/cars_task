@@ -1,3 +1,0 @@
-[console_scripts]
-cars-solution = cars.main:exit_handle
-
