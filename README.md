@@ -2,7 +2,7 @@
 
 ## Run as python script
 
-1. *Navigate to the ```cars_task/cars``` folder in terminal.*
+1. *Navigate to the ```cars_task``` folder in terminal.*
 2. ```pip3 install -r requirements.txt```
 3. ```python3 main.py```
 
@@ -15,5 +15,4 @@
 ## Run unit tests
 
 1. *Navigate to the ```cars_task/tests``` folder in terminal.*
-2. ```pip3 install -r requirements.txt```
-3. ```pytest unittests.py``` or  ```python3 -m pytest unittests.py```
+2. ```pytest unittests.py``` or  ```python3 -m pytest unittests.py```

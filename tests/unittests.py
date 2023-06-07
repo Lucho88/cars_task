@@ -1,17 +1,13 @@
 import unittest
-
-import pytest as pytest
-
 from cars.car_dataset import CarDataset
 
 
 class CarDatasetTests(unittest.TestCase):
-    # @pytest.fixture(autouse=True)
-    # def capsys(self, capsys):
-    #     """Initialize capsys for class, so it can be accessed in method/ s."""
-    #     self.capsys = capsys
-
     def test_valid_json_conversion_to_dataframe(self):
+        """
+        Try to load a valid JSON file into the dataframe.
+        On success return True and pass the test.
+        """
         data_loaded_successfully = False
         car_dataset = CarDataset()
         car_dataset.load_json_into_dataframe(
@@ -22,6 +18,10 @@ class CarDatasetTests(unittest.TestCase):
         self.assertTrue(data_loaded_successfully)
 
     def test_invalid_json_conversion_to_dataframe(self):
+        """
+        Try to load an invalid JSON file into the dataframe.
+        On fail return False and pass the test.
+        """
         data_loaded_successfully = False
         car_dataset = CarDataset()
         car_dataset.load_json_into_dataframe(

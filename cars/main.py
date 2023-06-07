@@ -6,10 +6,10 @@ logging.basicConfig(level=logging.INFO)
 
 def data_extract(json_file_path: str, csv_file_path: str) -> None:
     """
-    dgsfsdf
+    The main function that loads functions which log information from a dataframe.
     """
+
     car_dataset = CarDataset()
-    print("testing", flush=True)
     car_dataset.load_json_into_dataframe(json_file_path)
     car_dataset.make_and_model_extract()
 

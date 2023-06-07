@@ -8,7 +8,7 @@ class Dataset:
 
     def load_json_into_dataframe(self, json_file_path: str) -> None:
         """
-        Load a JSON file.
+        Load the JSON file into a Dataframe.
         """
         try:
             self.dataframe = pd.read_json(json_file_path)
@@ -24,7 +24,7 @@ class Dataset:
         """
         try:
             self.dataframe.to_csv(csv_file_path, index=False)
-            logging.info("Dataset saved to CSV successfully")
+            logging.info("Dataframe saved to CSV successfully")
         except Exception as e:
             logging.error(
                 f"An error occurred while saving the dataset to CSV: {str(e)}"

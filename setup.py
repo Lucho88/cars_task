@@ -1,6 +1,6 @@
 from setuptools import setup
 
-with open("cars/requirements.txt") as f:
+with open("requirements.txt") as f:
     required = f.read().splitlines()
 setup(
     name="cars_solution",
